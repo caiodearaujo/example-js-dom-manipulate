@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Exemplo Will</title>
+  </head>
+
+  <body>
+	<div class="container-fluid">
+    	<div class="row">
+    		<div class="col-12 text-center">
+    			<h1>Exemplo com Bootstrap</h1>
+    		</div>
+    	</div>
+    	<form action="javascript:completeForm()">
+	    	<div class="row">
+
+	    		<div class="col-sm text-center">
+	    			<div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="lines-addon">Linhas</span>
+              </div>
+					    <input type="number" id="input-lines" class="form-control" placeholder="Quantidade de linha" aria-label="Lines" aria-describedby="lines-addon">
+					  </div>
+          </div>
+          
+
+          <div class="col-sm text-center">
+	    			<div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="cols-addon">Colunas</span>
+              </div>
+					    <input type="number" id="input-cols" class="form-control" placeholder="Quantidade de coluna" aria-label="Cols" aria-describedby="cols-addon">
+					  </div>
+          </div>
+          
+          <div class="col-sm text-center">
+            <button type="submit" class="btn btn-primary btn btn-block" id="btn-matriz">Gerar Matriz</button>
+          </div>
+	    	</div>
+    </form>
+  </div>
+  <br><br>
+  <div class="container form-group" id="result">
+    <div class="row" id="waiting">
+      <div class="col text-center">
+          <h3>Aguardando preencher matriz</h3>
+          <br/>
+          <img src="https://miro.medium.com/max/978/0*mv8MNRLDNNnt5f72.gif" alt="Raquete batendo bolinha pro alto">
+      </div>
+    </div>
+    <!-- Resultado será gerado aqui -->
+  </div>
+
+  <div class="container" id="clear-result" style="display: none;">
+    <div class="row">
+      <div class="col">
+        <form action="javascript:clearResult()">
+          <button type="submit" class="btn btn-secondary btn-lg btn-block">Limpar matriz</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+    <!-- Optional JavaScript -->
+    <script type="text/javascript" src="js/main.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
